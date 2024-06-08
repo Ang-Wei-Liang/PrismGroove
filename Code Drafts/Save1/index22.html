@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D Audio Reactive Sphere</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="background-image">
+    <div id="container"></div>
+    <input type="file" id="audio-upload" accept="audio/*">
+    <select id="shape-select">
+        <option value="sphere">Sphere</option>
+        <option value="cube">Cube</option>
+        <option value="pyramid">Pyramid</option>
+        <option value="star">Star</option>
+        <option value="pentagon">Pentagon</option>
+    </select>
+    <select id="color-select">
+        <option value="0xffff00">Yellow</option>
+        <option value="0x00ff00">Green</option>
+        <option value="0xff0000">Red</option>
+        <option value="0xffffff">White</option>
+        <option value="rainbow">Rainbow</option>
+    </select>
+    <input type="range" id="playback-slider" min="0" max="10" step="10" value="0">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/controls/OrbitControls.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
+

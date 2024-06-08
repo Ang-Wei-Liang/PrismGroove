@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Groove Prism</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="container"></div>
+    <div id="controls">
+        <p>Welcome to Groove Prism</p>
+        <input type="file" id="audio-upload" accept="audio/*">
+        <input type="range" id="playback-slider" min="0" step="0.01">
+        <span id="current-time">0:00</span>
+        <button id="pause-button">Play</button>
+        <button id="remove-button">Reset All</button>
+        <select id="color-select">
+            <option value="0x0077ff">Blue</option>
+            <option value="0xff0000">Red</option>
+            <option value="0x00ff00">Green</option>
+            <option value="0xffff00">Yellow</option>
+            <option value="random">Random</option>
+
+        </select>
+        <select id="shape-select">
+            <option value="sphere">Sphere</option>
+            <option value="cube">Cube</option>
+            <option value="pyramid">Pyramid</option>
+            <option value="star">Star/Octagon</option>
+            <option value="pentagon">Pentagon</option>
+        </select>
+        <label>
+            Slide Mode
+            <input type="checkbox" id="slide-mode-toggle" checked>
+        </label>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/controls/OrbitControls.js"></script>
+    <script src="newscript.js"></script>
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D Audio Reactive Sphere</title>
+    <link rel="stylesheet" href="style33.css">
+    <style>
+        body { margin: 0; overflow: hidden; }
+        #controls {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        #playback-slider {
+            width: 300px;
+        }
+        #time-display {
+            margin-left: 10px;
+        }
+        .background-image {
+            background: url('background.jpg') no-repeat center center fixed;
+            background-size: cover;
+        }
+    </style>
+</head>
+<body class="background-image">
+    <div id="container"></div>
+    <div id="controls">
+        <input type="file" id="audio-upload" accept="audio/*">
+        <select id="shape-select">
+            <option value="sphere">Sphere</option>
+            <option value="cube">Cube</option>
+            <option value="pyramid">Pyramid</option>
+            <option value="star">Star</option>
+            <option value="pentagon">Pentagon</option>
+        </select>
+        <select id="color-select">
+            <option value="0xffff00">Yellow</option>
+            <option value="0x00ff00">Green</option>
+            <option value="0xff0000">Red</option>
+            <option value="0xffffff">White</option>
+            <option value="rainbow">Rainbow</option>
+        </select>
+        <button id="pause-button">Pause</button>
+        <button id="restart-button">Restart</button>
+        <input type="range" id="playback-slider" min="0" max="1" step="0.01" value="0">
+        <span id="time-display">0:00</span>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/controls/OrbitControls.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
