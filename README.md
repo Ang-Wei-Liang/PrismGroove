@@ -7,7 +7,7 @@
 Nobody to vibe with? Introducing Music Groove, a 3D shape which moves to the beat of your music!
 
 
-## [Live demo](https://santosharron.github.io/audio-visualizer-three-js/)
+## [Live demo](https://ang-wei-liang.github.io/PrismGroove/index.html)
 
 ## License
 
